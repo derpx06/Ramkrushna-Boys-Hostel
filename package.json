@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/derpx06/Ramkrushna-Boys-Hostel/issues"
   },
-  "homepage": "https://github.com/derpx06/Ramkrushna-Boys-Hostel#readme"
+  "homepage": "https://github.com/derpx06/Ramkrushna-Boys-Hostel#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
 }
