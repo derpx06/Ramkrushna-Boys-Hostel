@@ -4,7 +4,8 @@
   "description": "Website for Ramkrushna Boys Hostel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/derpx06/Ramkrushna-Boys-Hostel#readme",
   "dependencies": {
     "express": "^5.1.0",
+    "mongoose": "^8.17.0",
     "nodemon": "^3.1.10"
   }
 }
