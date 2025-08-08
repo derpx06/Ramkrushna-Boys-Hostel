@@ -106,9 +106,10 @@ body {
 }
 .images img{
       border: 2px solid #e2e8f0; /* gray-300 */
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 0.25rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    height: 100px;
     &:hover{
         transform: scale(1.2);
     }
