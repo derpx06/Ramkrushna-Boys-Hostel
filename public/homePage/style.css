@@ -127,10 +127,9 @@ background: url('../images/11.jpeg') no-repeat center center/cover;
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
 }
 
-/* === GENERAL SECTION STYLING === */
 .section-title {
   text-align: center;
-  font-size: 2.25rem; /* text-4xl */
+  font-size: 2.25rem; 
   font-weight: 700;
   margin-bottom: 0.5rem;
   animation: fadeInUp 1s ease-out;
@@ -138,15 +137,14 @@ background: url('../images/11.jpeg') no-repeat center center/cover;
 
 .section-subtitle {
   text-align: center;
-  color: #64748b; /* slate-500 */
-  font-size: 1.125rem; /* text-lg */
+  color: #64748b; 
+  font-size: 1.125rem; 
   max-width: 600px;
   margin: 0 auto 3rem auto;
   animation: fadeInUp 1s ease-out 0.2s;
   animation-fill-mode: both;
 }
 
-/* === AMENITIES SECTION === */
 .amenity-card {
   background-color: #f8fafc; /* slate-50 */
   border: 1px solid #e2e8f0; /* slate-200 */
@@ -155,13 +153,16 @@ background: url('../images/11.jpeg') no-repeat center center/cover;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s ease-out;
+  transform: rotate(4deg);
 }
 
 .amenity-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
+.images-mt-12{
 
+}
 .amenity-icon {
   font-size: 2.5rem;
   color: #3b82f6;
@@ -186,7 +187,7 @@ background: url('../images/11.jpeg') no-repeat center center/cover;
   height: 250px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 10 10px 12px rgba(167, 42, 42, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 0.5s ease-in-out both;
 }
@@ -196,4 +197,3 @@ background: url('../images/11.jpeg') no-repeat center center/cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Stagger
