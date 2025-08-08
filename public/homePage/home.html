@@ -3,82 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ramkrushna Boys Hostel</title>
-  <!-- Tailwind CSS -->
+  <title>Ramkrushna Boys Hostel | Your Home Away From Home</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- External CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="./style.css" />
 </head>
-<body class="bg-slate-100 text-slate-800 font-inter">
+<body class="bg-slate-50 text-slate-800">
 
-  <div class="container mx-auto p-4 md:p-6">
+  <header class="sticky-header">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl md:text-3xl font-bold text-white">Ramkrushna Boys Hostel</h1>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#amenities" class="nav-link">Amenities</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="contact-btn">Contact Us</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-white text-2xl"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Header -->
-    <header class="bg-white rounded-2xl shadow-lg p-6 mb-8">
-      <nav class="flex justify-between items-center">
-        <h1 class="text-2xl md:text-3xl font-bold text-blue-600">Ramkrushna Boys Hostel</h1>
-        <div class="hidden md:flex items-center space-x-6">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">Facilities</a>
-          <a href="#" class="contact-btn">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main Section -->
-    <main>
-        <div class="gallery">
-        <h1 class="text-2xl font-bold text-center text-slate-800 mb-6">Gallery</h1>
-        <div class="images">
-        <img src="../images/1.jpeg" alt="Image 1" />
-        <img src="../images/2.jpeg" alt="Image 2" />
-        <img src="../images/3.jpeg" alt="Image 3" />
-        <img src="../images/4.jpeg" alt="Image 4" />
-        <img src="../images/5.jpeg" alt="Image 5" />
-        <img src="../images/6.jpeg" alt="Image 6" />
-        <img src="../images/7.jpeg" alt="Image 7" />
-        <img src="../images/8.jpeg" alt="Image 8" />
-        <img src="../images/9.jpeg" alt="Image 9" />
-        <img src="../images/10.jpeg" alt="Image 10" />
-    </div>
-    </div>
-    </section>
-      <!-- Hero Section -->
-      <section class="hero">
-        <h2 class="hero-title">A Safe & Comfortable Stay</h2>
-        <p class="hero-desc">
-          We provide a secure, clean, and friendly environment for students and professionals. Your home away from home.
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">A Safe & Comfortable Stay</h2>
+        <p class="text-lg md:text-xl mb-8 animate-fade-in-up" style="animation-delay: 0.3s;">
+          We provide a secure, clean, and friendly environment for students. Your home away from home.
         </p>
-        <a href="#" class="availability-btn">Check Room Availability</a>
-      </section>
+        <a href="#contact" class="availability-btn animate-fade-in-up" style="animation-delay: 0.6s;">Check Room Availability</a>
+      </div>
+    </section>
 
-      <!-- Features -->
-      <section class="features">
-        <div class="feature-card">
-          <h3 class="feature-title">Fully Furnished</h3>
-          <p class="feature-desc">Every room comes with a bed, desk, and storage for your convenience.</p>
+    <section id="amenities" class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title">Our World-Class Amenities</h2>
+        <p class="section-subtitle">Everything you need for a productive and comfortable stay.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="amenity-card">
+            <i class="fas fa-wifi amenity-icon"></i>
+            <h3 class="amenity-title">High-Speed Wi-Fi</h3>
+            <p>Stay connected with unlimited high-speed internet, perfect for studies and streaming.</p>
+          </div>
+          <div class="amenity-card">
+            <i class="fas fa-shield-halved amenity-icon"></i>
+            <h3 class="amenity-title">24/7 Security</h3>
+            <p>Your safety is our priority with round-the-clock security personnel and CCTV surveillance.</p>
+          </div>
+          <div class="amenity-card">
+            <i class="fas fa-broom amenity-icon"></i>
+            <h3 class="amenity-title">Daily Housekeeping</h3>
+            <p>Enjoy a clean and hygienic living space with our dedicated daily housekeeping services.</p>
+          </div>
+          <div class="amenity-card">
+            <i class="fas fa-utensils amenity-icon"></i>
+            <h3 class="amenity-title">Hygienic Mess</h3>
+            <p>Healthy and delicious meals served daily in our clean and well-maintained dining hall.</p>
+          </div>
         </div>
-        <div class="feature-card">
-          <h3 class="feature-title">24/7 Security</h3>
-          <p class="feature-desc">Your safety is our priority with round-the-clock security and CCTV.</p>
-        </div>
-        <div class="feature-card">
-          <h3 class="feature-title">Prime Location</h3>
-          <p class="feature-desc">Located near major colleges and public transport links.</p>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-10 mt-8">
-      <p class="text-slate-500">&copy; 2025 Ramkrushna Boys Hostel. All Rights Reserved.</p>
-    </footer>
+    <section id="gallery" class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <h2 class="section-title">Glimpses of Our Hostel</h2>
+        <p class="section-subtitle">A picture is worth a thousand words.</p>
+        <div class="images mt-12">
+        <img src="../images/1.jpeg" alt="Hostel Room" />
+        <img src="../images/2.jpeg" alt="Common Area" />
+        <img src="../images/3.jpeg" alt="Building Exterior" />
+        <img src="../images/4.jpeg" alt="Study Desk" />
+        <img src="../images/5.jpeg" alt="Clean Bedroom" />
+        <img src="../images/6.jpeg" alt="Lounge Area" />
+        <img src="../images/7.jpeg" alt="Bunk Beds" />
+        <img src="../images/8.jpeg" alt="Modern Room" />
+        <img src="../images/9.jpeg" alt="Gallery Image 9" />
+        <img src="../images/10.jpeg" alt="Gallery Image 10" />
+        <img src="../images/12.jpeg" alt="Gallery Image 12" />
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">What Our Residents Say</h2>
+            <p class="section-subtitle">We are proud of the community we've built.</p>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+                <div class="testimonial-card">
+                    <p class="italic">"Living at Ramkrushna Hostel has been a great experience. It's safe, clean, and the management is very supportive. Highly recommended!"</p>
+                    <div class="mt-4">
+                        <h4 class="font-bold">Akash Sharma</h4>
+                        <p class="text-sm text-slate-500">Engineering Student</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="italic">"The best part is the location. It's so close to my college and the main market. The food is also much better than other hostels I've seen."</p>
+                    <div class="mt-4">
+                        <h4 class="font-bold">Rohan Patil</h4>
+                        <p class="text-sm text-slate-500">Medical Student</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="italic">"A perfect blend of discipline and friendly atmosphere. The 24/7 Wi-Fi and security make it an ideal place for students to focus on their goals."</p>
+                    <div class="mt-4">
+                        <h4 class="font-bold">Vikram Singh</h4>
+                        <p class="text-sm text-slate-500">Former Resident</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We are here to answer your questions. Visit us or give us a call.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447926127!2d73.7929269352233!3d18.52456488734015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1723126017122!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-blue-600 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-xl">Address</h3>
+                            <p class="text-slate-600">123, Vidya Nagar, Near Ferguson College, Pune, Maharashtra 411004</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-phone text-2xl text-blue-600 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-xl">Phone</h3>
+                            <p class="text-slate-600">+91 98765 43210, +91 91234 56789</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-envelope text-2xl text-blue-600 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-xl">Email</h3>
+                            <p class="text-slate-600">contact@ramkrushnahostel.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-800 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Ramkrushna Boys Hostel. All Rights Reserved.</p>
+      <p class="text-slate-400 text-sm mt-2">Designed with ❤️ in Pune</p>
+    </div>
+  </footer>
 
 </body>
 </html>
